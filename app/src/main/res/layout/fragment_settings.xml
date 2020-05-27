@@ -1,14 +1,134 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Settings Fragment"
-        android:textSize="20dp"
-        android:layout_marginTop="50dp">s</TextView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Settings"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="30dp"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change Account Setting"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="30dp"
+                android:textSize="15dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change Password"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="30dp"
+                android:textSize="15dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Privacy &amp; Policy"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="30dp"
+                android:textSize="15dp"/>
 
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FAQ"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:layout_marginTop="20dp"
 
-</LinearLayout>
+                android:layout_marginLeft="30dp"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+                android:textColor="#000000"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textSize="12dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+                android:textColor="#000000"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textSize="12dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Partners"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="30dp"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add or Remove Partners"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="30dp"
+                android:textSize="15dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update Partners"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="30dp"
+                android:textSize="15dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
