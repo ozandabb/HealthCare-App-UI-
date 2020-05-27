@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Run.runningActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/relLayout0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include layout="@layout/home_top_toolbar"></include>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relLayout02"
+            android:layout_below="@+id/relLayout0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include layout="@layout/layout_device_center_viewpager"></include>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relLayout02"
+            android:layout_alignParentBottom="true"
+            >
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="70dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="30dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/icon" />
+        </RelativeLayout>
+
+        <include layout="@layout/layout_bottom_navigation_view"></include>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
