@@ -45,7 +45,6 @@ public class Take_photoActivity extends AppCompatActivity {
                         //Toast.makeText(Take_photoActivity.this,"Permission Denied", Toast.LENGTH_LONG).show();
                         ActivityCompat.requestPermissions(Take_photoActivity.this, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE},1);
                     }else{
-
                         CropImage.activity()
                                 .setGuidelines(CropImageView.Guidelines.ON)
                                 .start(Take_photoActivity.this);
@@ -53,6 +52,11 @@ public class Take_photoActivity extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    public void goResult(View view){
+        Intent intent = new Intent(Take_photoActivity.this,ShowResult.class);
+        startActivity(intent);
     }
 
     @Override

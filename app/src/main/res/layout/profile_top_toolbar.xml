@@ -16,7 +16,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="23dp"
-                android:text="Dulshan Bashitha"
+                android:text="User Account "
                 android:textColor="#ffffff"
                 android:textSize="20dp"></TextView>
 

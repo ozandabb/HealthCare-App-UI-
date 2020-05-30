@@ -3,22 +3,14 @@ package com.ozandabb.healthappui.Home;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.core.content.ContextCompat;
 import androidx.viewpager.widget.ViewPager;
 
-import android.Manifest;
 import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.os.Build;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ImageView;
-import android.widget.TableLayout;
-import android.widget.Toast;
 
-import com.google.android.gms.dynamic.IFragmentWrapper;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.tabs.TabLayout;
 import com.ozandabb.healthappui.LoginActivity;
@@ -56,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
     private void setUpViewPager(){
         sectionPagerAdapter adapter = new sectionPagerAdapter(getSupportFragmentManager());
         adapter.adFragment(new homeFragment());
-        adapter.adFragment(new cameraFragment());
+//        adapter.adFragment(new cameraFragment());
         adapter.adFragment(new settingFragment());
         ViewPager viewPager = (ViewPager) findViewById(R.id.container);
         viewPager.setAdapter(adapter);
@@ -65,8 +57,8 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.setupWithViewPager(viewPager);
 
         tabLayout.getTabAt(0).setIcon(R.drawable.ic_posts);
-        tabLayout.getTabAt(1).setIcon(R.drawable.ic_camera);
-        tabLayout.getTabAt(2).setIcon(R.drawable.ic_settings);
+//        tabLayout.getTabAt(1).setIcon(R.drawable.ic_camera);
+        tabLayout.getTabAt(1).setIcon(R.drawable.ic_settings);
 
     }
 
@@ -122,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
 
         switch (item.getItemId()){
             case R.id.action_dermx:
-                Intent homeIntent = new Intent(MainActivity.this,Take_photoActivity.class);
+                Intent homeIntent = new Intent(MainActivity.this, Take_photoActivity.class);
                 startActivity(homeIntent);
                 return true;
 

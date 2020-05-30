@@ -14,7 +14,8 @@
             android:background="@color/colorPrimary"
             app:titleTextColor="#ffffff"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"></androidx.appcompat.widget.Toolbar>
+            android:layout_height="wrap_content">
+        </androidx.appcompat.widget.Toolbar>
     </RelativeLayout>
     <RelativeLayout
         android:layout_below="@id/relLayout0"
@@ -38,14 +39,22 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="Skin Analysis"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:layout_marginTop="30dp"
+                android:textSize="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="Tap the Camera Icon"
                 android:layout_gravity="center"
                 android:textAlignment="center"
                 android:textColor="#000000"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginBottom="10dp"
-
-                android:textSize="20dp"/>
+                android:textSize="10dp"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -70,97 +79,29 @@
                 android:layout_height="300dp"
                 android:src="@drawable/defaultpic" />
         </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" >
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Enter Blood Group"
-                android:textAlignment="center"
-                android:textColor="#000000"
-                android:layout_marginTop="15dp"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="30dp"
-                android:textSize="20dp"/>
-            <EditText
-                android:id="@+id/editTextBlood"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="O+ | A+ | A- | B+ | B-"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:ems="10"
-                android:inputType="textPersonName" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" >
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Duration of your Condition"
-                android:textAlignment="center"
-                android:textColor="#000000"
-                android:layout_marginTop="15dp"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="30dp"
-                android:textSize="20dp"/>
-            <EditText
-                android:id="@+id/editTextCondition"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Days | Weeks | Months | Years"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:ems="10"
-                android:inputType="textPersonName" />
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" >
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Enter your Gender"
-                android:textAlignment="center"
-                android:textColor="#000000"
-                android:layout_marginTop="15dp"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="30dp"
-                android:textSize="20dp"/>
-            <EditText
-                android:id="@+id/editTextGender"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:hint="Male | Female"
-                android:layout_marginRight="30dp"
-                android:ems="10"
-                android:inputType="textPersonName" />
-        </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="500dp"
             android:orientation="vertical" >
+
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="30dp"
-                android:textColor="#ffffff"
-                android:elevation="10dp"
-                android:background="@color/colorPrimary"
-                android:text="Submit Details"
                 android:layout_marginRight="30dp"
-                android:layout_marginLeft="30dp"></Button>
+                android:background="@color/colorPrimary"
+                android:elevation="10dp"
+                android:onClick="goResult"
+                android:text="Send Photo"
+                android:textColor="#ffffff">
+            </Button>
         </LinearLayout>
     </LinearLayout>
 
     </ScrollView>
+        <include layout="@layout/layout_bottom_navigation_view"></include>
     </RelativeLayout>
 
 

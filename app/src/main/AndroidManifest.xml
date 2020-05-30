@@ -11,24 +11,26 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/appicon"
-        android:label="@string/app_name"
+        android:label="E-Health Care"
         android:roundIcon="@drawable/appicon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Home.ShowResult"></activity>
         <activity android:name=".Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity">        </activity>
+        <activity android:name=".LoginActivity" />
         <activity android:name=".Home.Take_photoActivity" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/map_key" />
 
-        <activity android:name=".Home.MainActivity"></activity>
+        <activity android:name=".Home.MainActivity" />
         <activity android:name=".Device.deviceActivity" />
         <activity android:name=".Run.runningActivity" />
         <activity android:name=".Exercise.exerciseActivity" />

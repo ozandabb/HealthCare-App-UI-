@@ -31,33 +31,53 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Change Account Setting"
+                android:text="General Settings"
                 android:textAlignment="center"
                 android:textColor="#000000"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="5dp"
                 android:layout_marginLeft="30dp"
-                android:textSize="15dp"/>
+                android:textSize="12dp"/>
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="General Settings"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textColor="#000000"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:layout_marginLeft="30dp"-->
+<!--                android:textSize="15dp"/>-->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Change Password"
+                android:text="Account Settings"
                 android:textAlignment="center"
                 android:textColor="#000000"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
                 android:layout_marginLeft="30dp"
-                android:textSize="15dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Privacy &amp; Policy"
-                android:textAlignment="center"
-                android:textColor="#000000"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"
-                android:layout_marginLeft="30dp"
-                android:textSize="15dp"/>
+                android:textSize="12dp"/>
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Privacy &amp; Policy"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textColor="#000000"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:layout_marginLeft="30dp"-->
+<!--                android:textSize="15dp"/>-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Partners"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textColor="#000000"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:layout_marginLeft="30dp"-->
+<!--                android:textSize="15dp"/>-->
 
         </LinearLayout>
         <LinearLayout
@@ -74,24 +94,39 @@
 
                 android:layout_marginLeft="30dp"
                 android:textSize="20dp"/>
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."-->
+<!--                android:textColor="#000000"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_marginLeft="30dp"-->
+<!--                android:layout_marginRight="30dp"-->
+<!--                android:textSize="12dp"/>-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."-->
+<!--                android:textColor="#000000"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_marginLeft="30dp"-->
+<!--                android:layout_marginRight="30dp"-->
+<!--                android:textSize="12dp"/>-->
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+                android:text="Privacy &amp; Policy"
+                android:textAlignment="center"
                 android:textColor="#000000"
-                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:textSize="12dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-                android:textColor="#000000"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:textSize="12dp"/>
+                android:textSize="20dp"/>
+
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -107,28 +142,44 @@
                 android:layout_marginBottom="10dp"
                 android:layout_marginLeft="30dp"
                 android:textSize="20dp"/>
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Add or Remove Partners"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textColor="#000000"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:layout_marginLeft="30dp"-->
+<!--                android:textSize="15dp"/>-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Update Partners"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textColor="#000000"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:layout_marginLeft="30dp"-->
+<!--                android:textSize="15dp"/>-->
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Add or Remove Partners"
+                android:text="About us"
                 android:textAlignment="center"
                 android:textColor="#000000"
                 android:layout_marginTop="10dp"
-                android:layout_marginBottom="5dp"
                 android:layout_marginLeft="30dp"
-                android:textSize="15dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Update Partners"
-                android:textAlignment="center"
-                android:textColor="#000000"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"
-                android:layout_marginLeft="30dp"
-                android:textSize="15dp"/>
+                android:textSize="20dp"/>
 
         </LinearLayout>
+
     </LinearLayout>
     </ScrollView>
 </RelativeLayout>

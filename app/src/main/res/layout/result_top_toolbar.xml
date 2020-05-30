@@ -16,16 +16,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="23dp"
-                android:text="E-Health Care"
+                android:text="Results "
                 android:textColor="#ffffff"
                 android:textSize="20dp"></TextView>
-            <!--            <com.google.android.material.tabs.TabLayout-->
-            <!--                android:layout_width="match_parent"-->
-            <!--                android:layout_height="wrap_content"-->
-            <!--                android:id="@+id/tabs"-->
-            <!--                android:background="#ffffff">-->
 
-            <!--            </com.google.android.material.tabs.TabLayout>-->
         </com.google.android.material.appbar.AppBarLayout>
     </RelativeLayout>
 
