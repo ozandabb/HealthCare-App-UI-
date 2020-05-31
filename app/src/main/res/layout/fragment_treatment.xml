@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Treatment and Cure"
+            android:textAlignment="center"
+            android:textColor="#6200EE"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="sans-serif"
+            android:textSize="15dp"
+            android:text="These are examples of they types of treatment available for melanoma. Based on your personal history, pathology report, and stage at diagnosis, your doctor may recommend one or more of the following: "/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Surgery"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="sans-serif"
+            android:textSize="15dp"
+            android:text="Surgery is the mainstay of therapy for early stage melanoma and for the resection of an isolated metastatic melanoma site. There are several different types of surgeries that are regularly performed to treat melanoma.
+"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Radiation"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="sans-serif"
+            android:textSize="15dp"
+            android:text="Radiation therapy uses high energy rays, like x-rays, to kill cancer cells. Although radiation is not an overly common melanoma treatment option, it is most often used as a symptom-relieving therapy in patients whose melanoma has spread to the brain or bones. "/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clinical Trials"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="sans-serif"
+            android:textSize="15dp"
+            android:text="Clinical trials are research studies to test promising new or experimental cancer treatments. There are hundreds of clinical trials happening at any given time, and most experts agree that for a late-stage diagnosis, clinical trials are the best treatment option. You can also visit our Clinical Trial Finder to learn about clinical trials that are available."/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="70dp"
+            android:background="@color/colorPrimary"
+            android:elevation="10dp"
+            android:onClick="GOtAKEpHOTO"
+            android:text="Take a PHOTO"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

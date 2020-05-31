@@ -13,53 +13,50 @@ import android.view.View;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.tabs.TabLayout;
-import com.ozandabb.healthappui.LoginActivity;
-import com.ozandabb.healthappui.R;
 import com.ozandabb.healthappui.Device.deviceActivity;
 import com.ozandabb.healthappui.Exercise.exerciseActivity;
 import com.ozandabb.healthappui.Profile.profileActivity;
+import com.ozandabb.healthappui.R;
 import com.ozandabb.healthappui.Run.runningActivity;
 
-public class MainActivity extends AppCompatActivity {
-    private static final String TAG = "MainActivity";
+public class ActivityDermx extends AppCompatActivity {
+
+    private static final String TAG = "ActivityDermx";
     private static final int ACTIVITY_NUM = 0;
     private Toolbar mainToolbar;
-
-//    ImageView setUpImage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_dermx);
+
         setupBottomNavBar();
         setUpViewPager();
-
         mainToolbar = (Toolbar) findViewById(R.id.main_toolbar);
         setSupportActionBar(mainToolbar);
         getSupportActionBar().setTitle("E-Health Care");
-
-    }
-
-    public void goTakePhoto(View view){
-        Intent intent = new Intent(MainActivity.this,Take_photoActivity.class);
-        startActivity(intent);
     }
 
     private void setUpViewPager(){
         sectionPagerAdapter adapter = new sectionPagerAdapter(getSupportFragmentManager());
-        adapter.adFragment(new homeFragment());
-//        adapter.adFragment(new cameraFragment());
-        adapter.adFragment(new settingFragment());
+        adapter.adFragment(new DermxWhatFragment());
+        adapter.adFragment(new DermxSympotosFragment());
+        adapter.adFragment(new DermxTreatmentFragment());
         ViewPager viewPager = (ViewPager) findViewById(R.id.container);
         viewPager.setAdapter(adapter);
 
         TabLayout tabLayout = findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
 
-        tabLayout.getTabAt(0).setIcon(R.drawable.ic_posts);
-//        tabLayout.getTabAt(1).setIcon(R.drawable.ic_camera);
-        tabLayout.getTabAt(1).setIcon(R.drawable.ic_settings);
+        tabLayout.getTabAt(0).setIcon(R.drawable.question);
+        tabLayout.getTabAt(1).setIcon(R.drawable.sysm);
+        tabLayout.getTabAt(2).setIcon(R.drawable.treat);
 
+    }
+
+    public void GOtAKEpHOTO(View view){
+        Intent intent = new Intent(ActivityDermx.this, Take_photoActivity.class);
+        startActivity(intent);
     }
 
     private void setupBottomNavBar(){
@@ -75,23 +72,23 @@ public class MainActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()){
                     case R.id.ic_home:
-                        Intent homeIntent = new Intent(MainActivity.this,MainActivity.class);
+                        Intent homeIntent = new Intent(ActivityDermx.this,MainActivity.class);
                         startActivity(homeIntent);
                         break;
                     case R.id.ic_heart:
-                        Intent ExerciseIntent = new Intent(MainActivity.this, exerciseActivity.class);
+                        Intent ExerciseIntent = new Intent(ActivityDermx.this, exerciseActivity.class);
                         startActivity(ExerciseIntent);
                         break;
                     case R.id.ic_run:
-                        Intent runIntent = new Intent(MainActivity.this, runningActivity.class);
+                        Intent runIntent = new Intent(ActivityDermx.this, runningActivity.class);
                         startActivity(runIntent);
                         break;
                     case R.id.ic_device:
-                        Intent deviceIntent = new Intent(MainActivity.this, deviceActivity.class);
+                        Intent deviceIntent = new Intent(ActivityDermx.this, deviceActivity.class);
                         startActivity(deviceIntent);
                         break;
                     case R.id.ic_profile:
-                        Intent profileIntent = new Intent(MainActivity.this, profileActivity.class);
+                        Intent profileIntent = new Intent(ActivityDermx.this, profileActivity.class);
                         startActivity(profileIntent);
                         break;
 
@@ -101,35 +98,5 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.main_menu, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-
-        switch (item.getItemId()){
-            case R.id.action_dermx:
-                Intent homeIntent = new Intent(MainActivity.this, ActivityDermx.class);
-                startActivity(homeIntent);
-                return true;
-
-            case R.id.action_logout:
-                Intent LogOutIntent = new Intent(MainActivity.this, LoginActivity.class);
-                startActivity(LogOutIntent);
-                return true;
-
-//            case R.id.action_blood:
-//                return true;
-
-
-            default:
-                return false;
-        }
-
     }
 }
