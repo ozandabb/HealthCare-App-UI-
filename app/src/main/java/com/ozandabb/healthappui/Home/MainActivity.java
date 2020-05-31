@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setupBottomNavBar();
-        setUpViewPager();
+//        setUpViewPager();
 
         mainToolbar = (Toolbar) findViewById(R.id.main_toolbar);
         setSupportActionBar(mainToolbar);
@@ -45,22 +45,22 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    private void setUpViewPager(){
-        sectionPagerAdapter adapter = new sectionPagerAdapter(getSupportFragmentManager());
-        adapter.adFragment(new homeFragment());
-//        adapter.adFragment(new cameraFragment());
-        adapter.adFragment(new settingFragment());
-        ViewPager viewPager = (ViewPager) findViewById(R.id.container);
-        viewPager.setAdapter(adapter);
-
-        TabLayout tabLayout = findViewById(R.id.tabs);
-        tabLayout.setupWithViewPager(viewPager);
-
-        tabLayout.getTabAt(0).setIcon(R.drawable.ic_posts);
-//        tabLayout.getTabAt(1).setIcon(R.drawable.ic_camera);
-        tabLayout.getTabAt(1).setIcon(R.drawable.ic_settings);
-
-    }
+//    private void setUpViewPager(){
+//        sectionPagerAdapter adapter = new sectionPagerAdapter(getSupportFragmentManager());
+//        adapter.adFragment(new homeFragment());
+////        adapter.adFragment(new cameraFragment());
+//        adapter.adFragment(new settingFragment());
+//        ViewPager viewPager = (ViewPager) findViewById(R.id.container);
+//        viewPager.setAdapter(adapter);
+//
+//        TabLayout tabLayout = findViewById(R.id.tabs);
+//        tabLayout.setupWithViewPager(viewPager);
+//
+//        tabLayout.getTabAt(0).setIcon(R.drawable.ic_posts);
+////        tabLayout.getTabAt(1).setIcon(R.drawable.ic_camera);
+//        tabLayout.getTabAt(1).setIcon(R.drawable.ic_settings);
+//
+//    }
 
     private void setupBottomNavBar(){
         BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNavViewBar);
