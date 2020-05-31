@@ -100,18 +100,18 @@
             android:textSize="15dp"
             android:text="Clinical trials are research studies to test promising new or experimental cancer treatments. There are hundreds of clinical trials happening at any given time, and most experts agree that for a late-stage diagnosis, clinical trials are the best treatment option. You can also visit our Clinical Trial Finder to learn about clinical trials that are available."/>
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="30dp"
-            android:layout_marginBottom="70dp"
-            android:background="@color/colorPrimary"
-            android:elevation="10dp"
-            android:onClick="GOtAKEpHOTO"
-            android:text="Take a PHOTO"
-            android:textColor="#ffffff" />
+<!--        <Button-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_marginLeft="30dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginRight="30dp"-->
+<!--            android:layout_marginBottom="70dp"-->
+<!--            android:background="@color/colorPrimary"-->
+<!--            android:elevation="10dp"-->
+<!--            android:onClick="GOtAKEpHOTO"-->
+<!--            android:text="Take a PHOTO"-->
+<!--            android:textColor="#ffffff" />-->
     </LinearLayout>
     </LinearLayout>
     </ScrollView>
