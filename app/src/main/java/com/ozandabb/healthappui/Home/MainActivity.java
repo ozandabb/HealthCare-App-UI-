@@ -123,6 +123,11 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(LogOutIntent);
                 return true;
 
+            case R.id.action_language:
+                Intent language = new Intent(MainActivity.this, Language.class);
+                startActivity(language);
+                return true;
+
 //            case R.id.action_blood:
 //                return true;
 

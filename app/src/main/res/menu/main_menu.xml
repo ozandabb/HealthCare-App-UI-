@@ -16,9 +16,13 @@
         android:id="@+id/action_blood"
         android:title="@string/action_blood" />
     <item
+        android:id="@+id/action_language"
+        android:title="Language" />
+    <item
         android:id="@+id/action_settings_btn"
         android:title="@string/action_settings" />
     <item
         android:id="@+id/action_logout"
         android:title="@string/action_logout" />
+
 </menu>

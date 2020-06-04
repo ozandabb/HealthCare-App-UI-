@@ -88,16 +88,17 @@
             android:background="@color/colorPrimary"
             android:text="Sign In"
            />
+
         <Button
             android:id="@+id/register"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:background="#D4D5F2"
             android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
             android:layout_marginRight="30dp"
-            android:text="create account"
-            />
+            android:background="#D4D5F2"
+            android:onClick="goToRegister"
+            android:text="create account" />
     </LinearLayout>
 
 
