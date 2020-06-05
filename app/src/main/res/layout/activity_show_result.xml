@@ -85,6 +85,18 @@
                     android:onClick="backtoHome"
                     android:text="Back to Home"
                     android:textColor="#ffffff"></Button>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@color/colorPrimary"
+                    android:elevation="10dp"
+                    android:onClick="goReport"
+                    android:text="Get the Reports"
+                    android:textColor="#ffffff"></Button>
             </LinearLayout>
         </LinearLayout>
     </RelativeLayout>

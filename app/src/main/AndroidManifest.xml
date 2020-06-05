@@ -15,7 +15,9 @@
         android:roundIcon="@drawable/appicon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Home.CreateAccount"></activity>
+        <activity android:name=".Home.Reports"></activity>
+        <activity android:name=".Home.Settings" />
+        <activity android:name=".Home.CreateAccount" />
         <activity android:name=".Home.Language" />
         <activity android:name=".Home.ActivityDermx" />
         <activity android:name=".Home.ShowResult" />

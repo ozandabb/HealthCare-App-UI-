@@ -22,5 +22,10 @@ public class ShowResult extends AppCompatActivity {
         startActivity(homeGo);
     }
 
+    public void goReport(View view){
+        Intent goreport = new Intent(ShowResult.this, Reports.class);
+        startActivity(goreport);
+    }
+
 
 }

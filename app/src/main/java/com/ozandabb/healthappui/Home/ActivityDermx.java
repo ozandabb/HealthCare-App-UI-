@@ -34,7 +34,7 @@ public class ActivityDermx extends AppCompatActivity {
         setUpViewPager();
         mainToolbar = (Toolbar) findViewById(R.id.main_toolbar);
         setSupportActionBar(mainToolbar);
-        getSupportActionBar().setTitle("E-Health Care");
+        getSupportActionBar().setTitle("DermX");
     }
 
     private void setUpViewPager(){
@@ -42,6 +42,7 @@ public class ActivityDermx extends AppCompatActivity {
         adapter.adFragment(new DermxWhatFragment());
         adapter.adFragment(new DermxSympotosFragment());
         adapter.adFragment(new DermxTreatmentFragment());
+        adapter.adFragment(new DermxMapFragment());
         adapter.adFragment(new DermxTakePhoto());
         ViewPager viewPager = (ViewPager) findViewById(R.id.container);
         viewPager.setAdapter(adapter);
@@ -52,7 +53,8 @@ public class ActivityDermx extends AppCompatActivity {
         tabLayout.getTabAt(0).setIcon(R.drawable.question);
         tabLayout.getTabAt(1).setIcon(R.drawable.sysm);
         tabLayout.getTabAt(2).setIcon(R.drawable.treat);
-        tabLayout.getTabAt(3).setIcon(R.drawable.ic_camera);
+        tabLayout.getTabAt(3).setIcon(R.drawable.mapicon);
+        tabLayout.getTabAt(4).setIcon(R.drawable.ic_camera);
 
     }
 
