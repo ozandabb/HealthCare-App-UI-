@@ -127,7 +127,7 @@ public class MainActivity extends AppCompatActivity {
                 return true;
 
             case R.id.action_scans:
-                Intent scans = new Intent(MainActivity.this, Take_photoActivity.class);
+                Intent scans = new Intent(MainActivity.this, Reports.class);
                 startActivity(scans);
                 return true;
 
